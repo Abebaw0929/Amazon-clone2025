@@ -2,7 +2,8 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import { img } from "./img/data";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-const MyCarousel = () => {
+import classes from "./Carousel.module.css";
+const CarouselEffect = () => {
   return (
     <div>
       <Carousel
@@ -15,8 +16,9 @@ const MyCarousel = () => {
           return <img key={item} src={item} alt="" />;
         })}
       </Carousel>
+      <div className={classes.hero__img}></div>
     </div>
   );
 };
 
-export default MyCarousel;
+export default CarouselEffect;

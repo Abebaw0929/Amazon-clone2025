@@ -60,6 +60,12 @@
   font-weight: bold;
   outline: 1px solid white;
 }
+/* .search select {
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  width: 70px;
+} */
+
 
 .search select {
   border: none;

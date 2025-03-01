@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { SlLocationPin } from "react-icons/sl";
 
 import classes from "./Header.module.css";
@@ -12,12 +13,12 @@ const Header = () => {
     <section className={classes.fixed}>
       <div className={classes.header_container}>
         <div className={classes.logo_container}>
-          <a href="/" className="logo">
+          <Link to="/" className="logo">
             <img
               src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
               alt="amazon logo"
             />
-          </a>
+          </Link>
           <div className={classes.delivery}>
             <span>
               <SlLocationPin />
@@ -40,7 +41,7 @@ const Header = () => {
           <BsSearch size={38} />
         </div>
         <div className={classes.order__container}>
-          <a href="/" className={classes.language}>
+          <Link to="/" className={classes.language}>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/800px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png"
               alt="/"
@@ -49,29 +50,29 @@ const Header = () => {
             <select name="" id="">
               <option value="">EN</option>
             </select>
-          </a>
+          </Link>
 
           {/* Sign in */}
-          <a href="/">
+          <Link to="/auth">
             <div>
               <p>Hello, Sign In</p>
               <option value=""> Account & Lists</option>
               {/* <span>Account & Lists</span> */}
             </div>
-          </a>
+          </Link>
 
           {/* Order */}
-          <a href="/">
+          <Link to="/orders">
             <p>returns</p>
             <span>& Orders</span>
-          </a>
+          </Link>
 
           {/* Cart */}
-          <a href="/" className={classes.cart}>
+          <Link to="/cart" className={classes.cart}>
             <BiCart size={35} />
             {/* <span>{totalItem}</span> */}
             <span>0</span>
-          </a>
+          </Link>
         </div>
       </div>
       <LowerHeader />
