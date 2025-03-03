@@ -36,6 +36,7 @@
   align-items: center;
   padding: 10px 0px;
 }
+/* Parent container */
 .product_contianer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -47,7 +48,7 @@
 .products_container section {
   margin: 0 auto;
 }
-
+/* For flexed style */
 .product_flexed {
   box-shadow: none;
   height: auto;

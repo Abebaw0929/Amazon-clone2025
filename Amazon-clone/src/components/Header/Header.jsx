@@ -7,8 +7,13 @@ import { BsSearch } from "react-icons/bs";
 
 import { BiCart } from "react-icons/bi";
 import LowerHeader from "./LowerHeader";
+import { useContext } from "react";
+import { DataContext } from "../DataProvider/DataProvider";
 
 const Header = () => {
+  const [{ basket }, dispatch] = useContext(DataContext);
+  const totalProduct = basket.reduce((sum, item) => sum + item.amount, 0);
+  console.log(totalProduct);
   return (
     <section className={classes.fixed}>
       <div className={classes.header_container}>
@@ -49,6 +54,7 @@ const Header = () => {
 
             <select name="" id="">
               <option value="">EN</option>
+              <option value="am">አማ</option>
             </select>
           </Link>
 
@@ -63,15 +69,16 @@ const Header = () => {
 
           {/* Order */}
           <Link to="/orders">
-            <p>returns</p>
+            <p>Returns</p>
             <span>& Orders</span>
           </Link>
 
           {/* Cart */}
           <Link to="/cart" className={classes.cart}>
-            <BiCart size={35} />
+            {/* <BiCart size={35} /> */}
             {/* <span>{totalItem}</span> */}
-            <span>0</span>
+            <img src="/cart2.png" alt="" />
+            <span> {totalProduct} </span>
           </Link>
         </div>
       </div>

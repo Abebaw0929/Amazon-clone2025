@@ -30,7 +30,12 @@ function ProductDetail() {
       {isLoading ? (
         <Loader />
       ) : (
-        <ProductCard data={Product} flex={true} renderDesc={true} />
+        <ProductCard
+          data={Product}
+          flex={true}
+          renderDesc={true}
+          renderAdd={true}
+        />
       )}
     </LayOut>
   );
