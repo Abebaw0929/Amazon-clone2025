@@ -84,19 +84,6 @@ function Cart() {
           </div>
         )}
         {console.log(basket.length)}
-        {/* {basket?.length !== 0 && (
-          <div>
-            <div>
-              <p>SubTotal({basket?.length} items)</p>
-              <CurrencyFormat amount={totalprice} />
-            </div>
-            <span>
-              <input type="checkbox" />
-              <small>This order contain a gift</small>
-            </span>
-            <Link to="/payment">Proceed to Checkout</Link>
-          </div>
-        )} */}
       </section>
     </LayOut>
   );

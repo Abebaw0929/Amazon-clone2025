@@ -53,6 +53,7 @@
   overflow: hidden;
   width: 100%;
   flex: 1;
+  /* height: 38px; */
 }
 
 .search input,
@@ -93,7 +94,7 @@
   border: 2px solid rgb(235, 161, 173);
 }
 
-.order__container {
+.order_container {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -101,20 +102,20 @@
   justify-content: center;
 }
 
-.order__container a {
+.order_container a {
   text-decoration: none;
   color: white;
 }
 
-.order__container p {
+.order_container p {
   font-size: 10px;
 }
-.order__container option {
+.order_container option {
   font-size: 12px;
   font-weight: bold;
   font-family: sans-serif;
 }
-.order__container span {
+.order_container span {
   font-size: 12px;
   font-weight: bold;
   font-family: sans-serif;
@@ -140,7 +141,7 @@
   position: relative;
 }
 .cart img {
-  width: 75px;
+  width: 65px;
 }
 /* .cart span {
   position: absolute;
@@ -158,53 +159,53 @@
   top: 1px;
   font-size: 12px;
   /* background-color: #131921; */
-  left: 22px;
+  left: 17px;
   color: orange;
   z-index: 100;
 }
 
 .delivery:hover,
-.order__container a:hover,
-.lower__container a:hover {
+.order_container a:hover,
+.lower_container a:hover {
   border: 1px solid white;
   border-radius: 3px;
 }
 
-.lower__container {
+.lower_container {
   background-color: #232f3e;
   color: white;
   font-size: 12px;
   height: 37px;
 }
 
-.lower__container ul {
+.lower_container ul {
   display: flex;
   list-style: none;
   gap: 5px;
 }
 
-.lower__container ul li {
+.lower_container ul li {
   padding: 8px;
 }
 
-.lower__container ul li a:first-child {
+.lower_container ul li a:first-child {
   display: flex;
   gap: 2px;
   align-items: center;
 }
 
-.lower__container ul li a {
+.lower_container ul li a {
   text-decoration: none;
   color: white;
 }
 
 @media screen and (max-width: 576px) {
-  .header__container {
+  .header_container {
     flex-direction: column !important;
     display: flex;
     height: auto;
   }
-  .lower__container ul li:not(:first-child) {
+  .lower_container ul li:not(:first-child) {
     display: none;
   }
   .language {

@@ -72,3 +72,10 @@
 .btn:hover {
   background-color: var(--primary-color);
 }
+
+/* @media screen and (max-width: 5px) {
+  .cart_container {
+    flex-direction: column;
+    order: 1;
+  }
+} */
